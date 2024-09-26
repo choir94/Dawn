@@ -78,7 +78,7 @@ function install_and_start_dawn() {
     read -r -p "Masukkan kunci API Fast Captcha: " FAST_CAPTCHA_API_KEY
     echo "$FAST_CAPTCHA_API_KEY" > fast_captcha_api_key.txt
 
-    wget -O dawn.py https://raw.githubusercontent.com/sdohuajia/Dawn/main/dawn.py
+    wget -O dawn.py https://raw.githubusercontent.com/choir94/Dawn/refs/heads/main/Dawn.py
 
     # Memulai Dawn
     pm2 start python3 --name dawn -- dawn.py
@@ -111,11 +111,9 @@ function stop_and_remove_dawn() {
 function main_menu() {
     while true; do
         clear
-        echo "Skrip ini ditulis oleh komunitas, gratis dan open source, jangan percaya jika diminta membayar."
-        echo "================================================================"
-        echo "Grup Telegram komunitas node: https://t.me/niuwuriji"
-        echo "Channel Telegram komunitas node: https://t.me/niuwuriji"
-        echo "Komunitas Discord: https://discord.gg/GbMV5EcNWF"
+        
+        echo "Channel Telegram Airdrop node: https://t.me/airdrop_node"
+        
         echo "Untuk keluar dari skrip, tekan ctrl + C."
         echo "Pilih tindakan yang ingin dilakukan:"
         echo "1) Instal dan mulai Dawn"
